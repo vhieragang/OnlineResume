@@ -15,7 +15,10 @@ p {
 html, body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 100%;
-    background: #ffffff;
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
 }
 
     body a {
@@ -28,6 +31,7 @@ html, body {
 
 body {
     padding-top: 0px;
+    
 }
 
 a:focus {
@@ -44,27 +48,29 @@ a:focus {
 }
 
     [class*="sidebar"] h1 {
-        font-size: 2.5em;
-        font-weight: bolder;
+        font-weight: bold;
         margin-bottom: .5em;
         COLOR: #fff;
-        font-family: 'Varela Round', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+        text-shadow: 2px 1px 10px #000;
+        text-align: left;
     }
 
     [class*="sidebar"] img {
         border: 1px solid #fff;
-        padding: 2px;
+        padding: 5px;
         width: 100%;
     }
 
 [class*="details"] {
-    margin-top: .3em;
+    margin-top: .5em;
 }
 
     [class*="details"] h3 {
         font-weight: 600;
         font-size: 1em;
         color: #fff;
+        text-shadow: 1px 1px 10px #000;
     }
 
     [class*="details"] p {
@@ -90,7 +96,7 @@ address span {
 }
 /*----*/
 [class*="main"] {
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 [class*="content"] {
@@ -119,12 +125,17 @@ address span {
             padding: 0 1em;
             color: #333;
             font-size: 1.2em;
+            text-decoration: underline;
         }
 
             [class*="details_header"] ul li a:hover {
                 color: #6ecadc;
                 text-decoration: none;
             }
+ul li a[class*="current"]{
+    color: #6ecadc;
+    text-decoration: none;
+}
 
 [class*="company"] {
     margin: 2em 0;
@@ -143,7 +154,7 @@ address span {
 }
 
 [class*="company_details"], [class*="education_details"], [class*="certification_details"], [class*="certification_details"] {
-    padding: 1.5em 0 0em 2em;
+    padding: 1em 0 0em 2em;
 }
 
     [class*="company_details"] h4, [class*="education_details"] h4, [class*="certification_details"] h4 {
@@ -334,6 +345,33 @@ form input[type="text"]:focus, textarea:focus {
         height: 350px;
         border: none;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--responsive--*/
 @media (max-width: 1366px) {
     .sidebar h1 {
