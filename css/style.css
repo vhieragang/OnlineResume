@@ -165,11 +165,18 @@ ul li a[class*="current"]{
         font-family: 'Varela Round', sans-serif;
     }
 
+[class*="company_details"] h4 a:hover, [class*="education_details"] h4 a:hover, [class*="certification_details"] h4 a:hover{
+
+    text-decoration: none;
+
+}
+
         [class*="company_details"] h4 span, [class*="education_details"] h4 span, [class*="certification_details"] h4 span {
             font-size: 0.65em;
             margin-left: 5px;
             color: #999;
             font-weight: 400;
+            text-decoration: underline;
         }
 
     [class*="company_details"] h6, [class*="education_details"] h6, [class*="certification_details"] h6 {
@@ -283,7 +290,7 @@ h3.contentTitle {
 }
 
 [class*="copywrite"] p {
-    color: #999;
+    color: #000;
     font-size: 0.9em;
 }
 
@@ -559,6 +566,10 @@ form input[type="text"]:focus, textarea:focus {
     .sidebar img {
         width: 85%;
     }
+    
+    body{
+        background: #fff;
+    }
 }
 
 @media (max-width: 568px) {
@@ -566,9 +577,16 @@ form input[type="text"]:focus, textarea:focus {
         padding: 0 0.5em;
         font-size: 0.9em;
     }
+    
+    body{
+        background: #fff;
+    }
 }
 
 @media (max-width: 480px) {
+    body{
+        background: #fff;
+    }
     .content {
         margin-right: 2em;
     }
@@ -609,6 +627,9 @@ form input[type="text"]:focus, textarea:focus {
 }
 
 @media (max-width: 414px) {
+    body{
+        background: #fff;
+    }
     .sidebar_top {
         width: 45%;
     }
@@ -636,6 +657,10 @@ form input[type="text"]:focus, textarea:focus {
 }
 
 @media (max-width: 384px) {
+    body{
+        background: #fff;
+    }
+    
     .sidebar h1 {
         font-size: 1.2em;
     }
@@ -711,6 +736,9 @@ form input[type="text"]:focus, textarea:focus {
 }
 
 @media (max-width: 375px) {
+    body{
+        background: #fff;
+    }
     .sidebar h1 {
         font-size: 1em;
     }
@@ -747,6 +775,10 @@ form input[type="text"]:focus, textarea:focus {
 }
 
 @media (max-width: 320px) {
+    body{
+        background: #fff;
+    }
+    
     .sidebar_top {
         width: 50%;
     }
